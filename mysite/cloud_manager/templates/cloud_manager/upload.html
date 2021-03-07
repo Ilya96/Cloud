@@ -1,8 +1,8 @@
 <title>Upload file</title>
 <h1>Upload file</h1>
 <h3>Select file</h3>
-<form enctype="multipart/form-data" action="{% url 'menu' %}" method="POST">
+<form enctype="multipart/form-data" action="{% url 'upload' %}" method="POST">
     {% csrf_token %}
-    <input type="file">
+    <input type="file" name="document">
     <button type="submit" class="btn btn-primary btn-block">OK</button>
 </form>

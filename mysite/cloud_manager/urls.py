@@ -5,5 +5,5 @@ urlpatterns = [
     path('', menu, name='menu'),
     path('upload', upload, name='upload'),
     path('download', download, name='download'),
-    path('delete', delete, name=' delete'),
+    path('delete', delete, name='delete'),
 ]

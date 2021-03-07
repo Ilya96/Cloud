@@ -1,7 +1,7 @@
 {% block title %}{% endblock %}
 <h3>Enter file hash</h3>
-<form enctype="multipart/form-data" action="{% url 'menu' %}" method="POST">
+<form enctype="multipart/form-data" {% block url %}{% endblock %} method="POST">
     {% csrf_token %}
-    <input type="text">
+    <input type="text" name="text">
     <button type="submit" class="btn btn-primary btn-block">OK</button>
 </form>
